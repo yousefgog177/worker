@@ -2,6 +2,10 @@ const FILESYSTEM__ = require('./system.js')
 
 const AXIOS__ = require("axios");
 const oldRequire = require;
+const express = require("express");
+const app = express()
+app.listen(80)
+app.get("/", (req, res)=>res.sendStatus(200))
 
 class Main {
   constructor() {
