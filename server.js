@@ -46,7 +46,7 @@ class Main {
       .then((res) => res.data)
       .catch((err) => this.handleError(err));
 
-    if (!filesObj) return setTimeout(()=>{process.exit(0)}, 5000);
+    if (!filesObj) return setTimeout(()=>{process.exit(0)}, 6000);
 
     this._files = filesObj;
     console.log("Files Loaded!");
@@ -163,4 +163,5 @@ result: ${!!result}
 }
 
 new Main();
+
 
